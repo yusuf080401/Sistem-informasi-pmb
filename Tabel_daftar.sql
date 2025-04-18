@@ -1,0 +1,20 @@
+CREATE TABLE pendaftar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_lengkap VARCHAR(255) NOT NULL,
+    nik VARCHAR(16) UNIQUE NOT NULL,
+    tempat_lahir VARCHAR(100),
+    tanggal_lahir DATE,
+    jenis_kelamin ENUM('L', 'P'),
+    agama VARCHAR(50),
+    alamat TEXT,
+    no_telepon VARCHAR(20),
+    email VARCHAR(100) UNIQUE,
+    asal_sekolah VARCHAR(255),
+    tahun_lulus YEAR,
+    nilai_ujian DECIMAL(5, 2),
+    program_studi_1 VARCHAR(100) NOT NULL,
+    program_studi_2 VARCHAR(100),
+    foto_path VARCHAR(255),
+    ijazah_path VARCHAR(255),
+    tanggal_daftar TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

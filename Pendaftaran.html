@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - Sistem Informasi PMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi PMB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="informasi.html">Informasi PMB</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="pengumuman.html">Pengumuman</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+        <form action="proses_pendaftaran.php" method="POST" enctype="multipart/form-data"> <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <div>
+                    <label for="nama_lengkap">Nama Lengkap:</label>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+                </div>
+                <div>
+                    <label for="nik">NIK:</label>
+                    <input type="text" id="nik" name="nik" pattern="[0-9]{16}" title="Masukkan 16 digit NIK" required>
+                </div>
+                <div>
+                    <label for="tempat_lahir">Tempat Lahir:</label>
+                    <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+                </div>
+                <div>
+                    <label for="tanggal_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                </div>
+                <div>
+                    <label for="jenis_kelamin">Jenis Kelamin:</label>
+                    <select id="jenis_kelamin" name="jenis_kelamin" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="agama">Agama:</label>
+                    <input type="text" id="agama" name="agama" required>
+                </div>
+                <div>
+                    <label for="alamat">Alamat Lengkap:</label>
+                    <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                </div>
+                <div>
+                    <label for="no_telepon">Nomor Telepon:</label>
+                    <input type="tel" id="no_telepon" name="no_telepon" pattern="[0-9]+" title="Masukkan hanya angka" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Pendidikan</legend>
+                <div>
+                    <label for="asal_sekolah">Asal Sekolah:</label>
+                    <input type="text" id="asal_sekolah" name="asal_sekolah" required>
+                </div>
+                <div>
+                    <label for="tahun_lulus">Tahun Lulus:</label>
+                    <input type="number" id="tahun_lulus" name="tahun_lulus" min="1900" max="[Tahun Sekarang]" required>
+                </div>
+                <div>
+                    <label for="nilai_ujian">Nilai Ujian Akhir/Rata-rata:</label>
+                    <input type="number" id="nilai_ujian" name="nilai_ujian" step="0.01">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pilihan Program Studi</legend>
+                <div>
+                    <label for="program_studi_1">Pilihan 1:</label>
+                    <select id="program_studi_1" name="program_studi_1" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="[Kode/Nama Prodi 1]">[Nama Program Studi 1]</option>
+                        <option value="[Kode/Nama Prodi 2]">[Nama Program Studi 2]</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="program_studi_2">Pilihan 2 (Opsional):</label>
+                    <select id="program_studi_2" name="program_studi_2">
+                        <option value="">-- Pilih --</option>
+                        <option value="[Kode/Nama Prodi 1]">[Nama Program Studi 1]</option>
+                        <option value="[Kode/Nama Prodi 2]">[Nama Program Studi 2]</option>
+                        </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Berkas Pendukung</legend>
+                <div>
+                    <label for="upload_foto">Upload Foto (JPG/PNG):</label>
+                    <input type="file" id="upload_foto" name="upload_foto" accept=".jpg,.png">
+                </div>
+                <div>
+                    <label for="upload_ijazah">Upload Scan Ijazah/Surat Keterangan Lulus (PDF):</label>
+                    <input type="file" id="upload_ijazah" name="upload_ijazah" accept=".pdf">
+                </div>
+                </fieldset>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; [Tahun] Sistem Informasi PMB - [Nama Institusi]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

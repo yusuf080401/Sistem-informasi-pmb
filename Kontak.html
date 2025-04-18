@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Sistem Informasi PMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi PMB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="informasi.html">Informasi PMB</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="pengumuman.html">Pengumuman</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Hubungi Kami</h2>
+
+        <section>
+            <h3>Informasi Kontak</h3>
+            <p>Anda dapat menghubungi kami melalui:</p>
+            <ul>
+                <li><strong>Alamat:</strong> [Alamat Lengkap Institusi]</li>
+                <li><strong>Telepon:</strong> [Nomor Telepon]</li>
+                <li><strong>Email:</strong> <a href="mailto:[Alamat Email]">[Alamat Email]</a></li>
+                <li><strong>Website:</strong> <a href="https://interns-newcomb.tulane.edu/2016/08/08/websites-and-network-work-work-work-work/" target="_blank">https://interns-newcomb.tulane.edu/2016/08/08/websites-and-network-work-work-work-work/</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Formulir Pertanyaan</h3>
+            <form action="proses_kontak.php" method="POST"> <div>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subjek">Subjek:</label>
+                    <input type="text" id="subjek" name="subjek" required>
+                </div>
+                <div>
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; [Tahun] Sistem Informasi PMB - [Nama Institusi]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

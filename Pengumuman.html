@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman - Sistem Informasi PMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi PMB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="informasi.html">Informasi PMB</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="pengumuman.html">Pengumuman</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Pengumuman Hasil Seleksi Penerimaan Mahasiswa Baru Tahun Akademik [Tahun]</h2>
+
+        <section id="cari-pengumuman">
+            <h3>Cari Pengumuman</h3>
+            <form action="cari_pengumuman.php" method="GET"> <div>
+                    <label for="nomor_pendaftaran">Nomor Pendaftaran:</label>
+                    <input type="text" id="nomor_pendaftaran" name="nomor_pendaftaran" required>
+                </div>
+                <button type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section id="daftar-lulus">
+            <h3>Daftar Calon Mahasiswa yang Lulus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No. Pendaftaran</th>
+                        <th>Nama Lengkap</th>
+                        <th>Program Studi</th>
+                        <th>Status</th> </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[Nomor Pendaftaran]</td>
+                        <td>[Nama Lengkap]</td>
+                        <td>[Program Studi]</td>
+                        <td>Lulus</td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p>Catatan: Daftar ini akan diperbarui secara berkala.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; [Tahun] Sistem Informasi PMB - [Nama Institusi]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

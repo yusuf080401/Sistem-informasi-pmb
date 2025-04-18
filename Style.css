@@ -1,0 +1,267 @@
+/* Reset CSS untuk konsistensi antar browser */
+body, h1, h2, h3, p, ul, ol, li, form, fieldset, legend, input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Agar padding dan border tidak menambah ukuran elemen */
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff; /* Warna biru utama */
+    color: white;
+    padding: 1em 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2, main h3 {
+    color: #007bff;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5em;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+/* Styling khusus untuk halaman beranda */
+.hero {
+    text-align: center;
+    padding: 3em 0;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.hero h2 {
+    color: #007bff;
+    margin-bottom: 0.5em;
+    border-bottom: none;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #28a745; /* Warna hijau untuk tombol */
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+    background-color: #1e7e34;
+}
+
+.informasi-singkat ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Styling untuk formulir pendaftaran */
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="number"],
+form input[type="file"],
+form textarea,
+form select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form fieldset {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form legend {
+    padding: 0 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling untuk tabel pengumuman */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Styling untuk halaman login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5em;
+}
+
+.login-container form div {
+    margin-bottom: 1em;
+}
+
+.login-container form label {
+    display: block;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.login-container form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-container form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design (opsional) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .login-container {
+        margin: 20px auto;
+    }
+
+    footer {
+        position: static; /* Ubah posisi footer agar tidak menutupi konten pada layar kecil */
+    }
+}
